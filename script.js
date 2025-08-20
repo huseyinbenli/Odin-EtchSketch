@@ -3,6 +3,7 @@ const resetBtn = document.querySelector(".reset");
 const resizeBtn = document.querySelector(".resize");
 const blackBtn = document.querySelector(".black");
 const rainbowBtn = document.querySelector(".rainbow");
+const eraserBtn = document.querySelector(".eraser");
 
 function randomRgb() {
   return Math.floor(Math.random() * 256);
@@ -48,5 +49,13 @@ resetBtn.addEventListener("click", () => {
   const divs = document.querySelectorAll(".div");
   divs.forEach((div) => {
     div.style.backgroundColor = "";
+  });
+});
+
+eraserBtn.addEventListener("click", () => {
+  container.addEventListener("mouseover", (event) => {
+    if (event.target.classList.contains("div")) {
+      event.target.style.backgroundColor = `rgb(255,255,255)`;
+    }
   });
 });

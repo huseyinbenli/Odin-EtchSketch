@@ -23,7 +23,7 @@ createCells(16); // Initial grid size
 resizeBtn.addEventListener("click", () => {
   let newSize = parseInt(prompt("Enter new grid size (4-100):"), 10);
   if (isNaN(newSize) || newSize < 4 || newSize > 100) {
-    alert("Please enter a valid number between 1 and 100.");
+    alert("Please enter a valid number between 4 and 100.");
     return;
   }
   createCells(newSize);

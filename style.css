@@ -27,8 +27,8 @@ button {
 }
 
 .container {
-  width: 800px;
-  height: 800px;
+  width: 60vw;
+  height: 55vw;
   margin: auto;
   margin-top: 4rem;
   display: flex;

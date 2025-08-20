@@ -31,7 +31,7 @@ resizeBtn.addEventListener("click", () => {
 rainbowBtn.addEventListener("click", () => {
   container.addEventListener("mouseover", (event) => {
     if (event.target.classList.contains("div")) {
-      event.target.style.backgroundColor = `rgb(${randomRgb()}, ${randomRgb()}, ${randomRgb()})`;
+      event.target.style.backgroundColor = `rgb(${randomRgb()}, ${randomRgb()}, ${randomRgb()})`; // Set random color with opacity
     }
   });
 });
